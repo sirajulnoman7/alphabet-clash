@@ -9,10 +9,39 @@ function showElementById(elementId){
     const element=document.getElementById(elementId);
     element.classList.remove('hidden')
 }
+
+// get and set new score element by function
+function getTextElementById(elementId){
+    const getElementIdText=document.getElementById(elementId);
+    const elementIdText=getElementIdText.innerText;
+    const newElement=parseInt(elementIdText);
+    return newElement
+}
+
+function setElementById(elementIdSet,value){
+    const setElementId=document.getElementById(elementIdSet)
+    setElementId.innerText=value;
+}
+
+
+function getElementTextById(element){
+    const elementText=document.getElementById(element);
+    text=elementText.innerText;
+    return text;
+}
+
+
+
+
+
 // set selected alphabet background color....... step-6
 function setAlphabetBackgrounDColorById(alphabetId){
    const getAlphabet=document.getElementById(alphabetId);
    getAlphabet.classList.add('bg-amber-500');
+}
+function RemoveAlphabetBackgrounDColorById(alphabetId){
+   const getAlphabet=document.getElementById(alphabetId);
+   getAlphabet.classList.remove('bg-amber-500');
 }
 
 //  alphabet function ......step-3
